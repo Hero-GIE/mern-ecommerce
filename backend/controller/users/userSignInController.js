@@ -99,6 +99,7 @@ async function userSignInController(req, res) {
       const tokenOption = {
         httpOnly: true,
         secure: true, // Ensure the token is only sent over HTTPS
+        sameSite : 'None'
       };
 
       // Send the token in the cookie and respond with success
