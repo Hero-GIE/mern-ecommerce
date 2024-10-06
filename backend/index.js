@@ -44,7 +44,7 @@ const app = express();
 // Middleware
 const allowedOrigins = [
   process.env.FRONTEND_URL,      // local frontend
-  'https://mern-ecommerce-f8ny.vercel.app'  // production frontend on Vercel
+  'https://mern-ecommerce-r8zq.vercel.app'  // production frontend on Vercel
 ];
 
 app.use(cors({
