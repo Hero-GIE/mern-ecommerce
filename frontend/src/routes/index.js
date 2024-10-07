@@ -11,10 +11,10 @@ import ProductDetails from "../pages/ProductDetails";
 import SearchProduct from "../pages/SearchProduct";
 import Cart from "../pages/Cart";
 import Dashboard from "../pages/DashBoard";
-// import Order from "../pages/Order";
 import Success from "../pages/Success";
 import Cancel from "../pages/Cancel";
 import { OrderPage } from "../pages/OrderPage";
+import AllOrderPage from "../pages/AllOrderPage";
 
 
 const router = createBrowserRouter([
@@ -62,12 +62,11 @@ const router = createBrowserRouter([
         element: <Cancel />,
       },
 
-      
       {
         path: "order",
         element: <OrderPage />,
       },
-    
+
       {
         path: "search",
         element: <SearchProduct />,
@@ -77,22 +76,27 @@ const router = createBrowserRouter([
         path: "admin-panel",
         element: <AdminPanel />,
         children: [
+
           {
             path: "all-users",
             element: <AllUsers />,
           },
+
           {
             path: "all-products",
             element: <AllProducts />,
           }, 
+
           {
             path: "dashboard",
             element: <Dashboard />,
           },
-          // {
-          //   path: "order",
-          //   element: <Order />,
-          // },
+
+          {
+            path: "all-orders",
+            element: <AllOrderPage />,
+          },
+        
     
         ],
       },

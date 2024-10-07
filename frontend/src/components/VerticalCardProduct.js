@@ -50,7 +50,7 @@ const VerticalCardProduct = ({ category, heading }) => {
 
       <div className="relative">
         <button
-          className="bg-Orange text-white shadow-md rounded-full p-2 absolute left-2 top-1/2 transform -translate-y-1/2 text-lg hidden md:block z-50"
+          className="bg-Orange text-white shadow-md rounded-full p-2 absolute left-2 top-1/2 transform -translate-y-1/2 text-lg hidden md:block z-20"
           onClick={scrollLeft}
         >
           <FaAngleLeft />
@@ -117,7 +117,7 @@ const VerticalCardProduct = ({ category, heading }) => {
         </div>
 
         <button
-          className="bg-Orange text-white shadow-md rounded-full p-2 absolute right-2 top-1/2 transform -translate-y-1/2 text-lg hidden md:block z-50"
+          className="bg-Orange text-white shadow-md rounded-full p-2 absolute right-2 top-1/2 transform -translate-y-1/2 text-lg hidden md:block z-20"
           onClick={scrollRight}
         >
           <FaAngleRight />

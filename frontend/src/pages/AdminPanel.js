@@ -42,7 +42,7 @@ const AdminPanel = () => {
                         <Link to={"all-products"} className='flex items-center gap-2 px-4 py-3 font-semibold  rounded-md text-Orange hover:bg-Orange hover:text-white transition-all'>
                             <FaBoxOpen /> Products
                         </Link>
-                        <Link to={"order"} className='flex items-center font-semibold gap-2 px-4 py-3 rounded-md text-Orange hover:bg-Orange hover:text-white transition-all'>
+                        <Link to={"all-orders"} className='flex items-center font-semibold gap-2 px-4 py-3 rounded-md text-Orange hover:bg-Orange hover:text-white transition-all'>
                             <FaClipboardList /> Orders
                         </Link>
                     </nav>
